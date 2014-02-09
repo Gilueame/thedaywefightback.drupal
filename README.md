@@ -18,6 +18,6 @@ This is a Drupal 7.x module.
 
 ## Installation
 
-Install the zip file via /admin/modules/install page in the Drupal admin then enable the module. Plugin options are available at /admin/config/content/tdwfb.
+Install the zip file via /admin/modules/install page in the Drupal admin then enable the module. Module options are available at /admin/config/content/tdwfb.
 
 Set the 'Disable Date' option to yes for testing and but remember to revert back to no, so that the banner only appears on the 11th February.
