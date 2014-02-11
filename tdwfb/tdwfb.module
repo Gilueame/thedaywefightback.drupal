@@ -8,12 +8,14 @@ function tdwfb_page_alter(&$page) {
 	$greeting         = variable_get('tdwfb_greeting', '');
 	$disableDate      = variable_get('tdwfb_disable_date', 0);
 	$callOnly         = variable_get('tdwfb_call_only', 0);
-	$overrideLocation = variable_get('tdwfb_override_location', 'none');
+    $overrideLocation = variable_get('tdwfb_override_location', 'none');
+    $startMinimized   = variable_get('tdwfb_start_minimized', false);
 
 	if ($greeting) $config['greeting'] = $greeting;
 	if ($disableDate == 1) $config['disableDate'] = true;
 	if ($callOnly == 1) $config['callOnly'] = true;
-	if ($overrideLocation != 'none') $config['overrideLocation'] = $overrideLocation;
+    if ($overrideLocation != 'none') $config['overrideLocation'] = $overrideLocation;
+    if ($startMinimized) $config['startAsMinimized'] = true;
 
 	$json_config = json_encode((object)$config);
 	$js =<<<EOS
