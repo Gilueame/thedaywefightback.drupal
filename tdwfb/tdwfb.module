@@ -15,7 +15,7 @@ function tdwfb_page_alter(&$page) {
 	if ($callOnly == 1) $config['callOnly'] = true;
 	if ($overrideLocation != 'none') $config['overrideLocation'] = $overrideLocation;
 
-	$json_config = json_encode($config, JSON_FORCE_OBJECT);
+	$json_config = json_encode((object)$config);
 	$js =<<<EOS
 <!--[if !(lt IE 8)]><!-->
 <script type="text/javascript">

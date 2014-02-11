@@ -14,7 +14,7 @@ Plugin adds https://github.com/tfrce/thedaywefightback.js to your Drupal pages.
 
 ## Compatibility
 
-This is a Drupal 7.x module.
+This is a Drupal 7.x module, requires PHP >= 5.2.
 
 ## Installation
 
